@@ -8,6 +8,7 @@ import MessageBox from "./components/MessageBox";
 import { selectAppLoading } from "./store/appState/selectors";
 import { Jumbotron } from "react-bootstrap";
 import { useSelector } from 'react-redux';
+import Book from '../src/pages/Book';
 
 const Home = () => (
   <Jumbotron>
@@ -28,6 +29,7 @@ function App() {
       <MessageBox />
       {isLoading ? <Loading /> : null}
       <Switch>
+        <Route path='/' component={Book} />
       </Switch>
     </div>
   );
