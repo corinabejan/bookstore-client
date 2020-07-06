@@ -1,25 +1,14 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
 import { Switch, Route } from "react-router-dom";
 import Navigation from "./components/Navigation";
 import Loading from "./components/Loading";
 import MessageBox from "./components/MessageBox";
 import { selectAppLoading } from "./store/appState/selectors";
-import { Jumbotron } from "react-bootstrap";
-import { useSelector } from 'react-redux';
-import Book from '../src/pages/Book';
+import { useSelector } from "react-redux";
+import Book from "../src/pages/Book";
+import BookDetails from "../src/pages/BookDetails";
 
-const Home = () => (
-  <Jumbotron>
-    <h1>Home</h1>
-  </Jumbotron>
-);
-const Other = () => (
-  <Jumbotron>
-    <h1>Other</h1>
-  </Jumbotron>
-);
 
 function App() {
   const isLoading = useSelector(selectAppLoading);
@@ -29,7 +18,8 @@ function App() {
       <MessageBox />
       {isLoading ? <Loading /> : null}
       <Switch>
-        <Route path='/' component={Book} />
+        <Route exact path="/" component={Book} />
+        <Route path="/books/:id" component={BookDetails} />
       </Switch>
     </div>
   );

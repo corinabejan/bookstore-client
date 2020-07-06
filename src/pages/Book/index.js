@@ -67,11 +67,13 @@ export default function Book() {
           {filteredSearch.map((book, i) => (
             <Homepage
               key={i}
+              id={book.id}
               title={book.title}
               image={book.image}
               author={book.author}
               genre={book.genre}
               price={book.price}
+              showLink={true}
             />
           ))}
         </Container>
