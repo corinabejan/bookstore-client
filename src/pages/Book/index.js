@@ -13,6 +13,7 @@ export default function Book() {
   const books = useSelector(selectBooks);
   const categories = useSelector(selectCategories);
   const [selectedCategory, setSelectedCategory] = useState(-1);
+  const [searchBook, setSearchBook] = useState("");
 
   const filteredBooks =
     selectedCategory == -1
@@ -27,6 +28,14 @@ export default function Book() {
         {category.genre}
       </option>
     );
+  });
+
+  const normalizeQuery = (query) => {
+    return query.toLowerCase().replace(/\s-/g, "");
+  };
+
+  const filteredSearch = filteredBooks.filter((book) => {
+    return normalizeQuery(book.title).includes(normalizeQuery(searchBook));
   });
 
   useEffect(() => {
@@ -47,7 +56,15 @@ export default function Book() {
           </div>
         </Container>
         <Container>
-          {filteredBooks.map((book, i) => (
+          <input
+            type="search"
+            value={searchBook}
+            onChange={(e) => setSearchBook(e.target.value)}
+            placeholder="Search for a book..."
+          />
+        </Container>
+        <Container>
+          {filteredSearch.map((book, i) => (
             <Homepage
               key={i}
               title={book.title}
