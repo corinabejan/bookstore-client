@@ -12,14 +12,21 @@ export default function Book() {
   const dispatch = useDispatch();
   const books = useSelector(selectBooks);
   const categories = useSelector(selectCategories);
-  const [sortBooks, setSortedBooks] = useState([]);
+  const [selectedCategory, setSelectedCategory] = useState(-1);
 
-  const genre = books.map(book => {
-    return book.genre
-  })
+  const filteredBooks =
+    selectedCategory == -1
+      ? books
+      : books.filter((book) => {
+          return book.categoryId == selectedCategory;
+        });
 
   const categoryJSX = categories.map((category, i) => {
-    return <option key={i}>{category.genre}</option>;
+    return (
+      <option key={i} value={category.id}>
+        {category.genre}
+      </option>
+    );
   });
 
   useEffect(() => {
@@ -33,16 +40,14 @@ export default function Book() {
         <h1>Books To Find</h1>
         <Container>
           <div className="BrowseCategory">
-            <select>
-              <option>
-                categories...
-              </option>
+            <select onChange={(e) => setSelectedCategory(e.target.value)}>
+              <option value={-1}>categories...</option>
               {categoryJSX}
             </select>
           </div>
         </Container>
         <Container>
-          {books.map((book, i) => (
+          {filteredBooks.map((book, i) => (
             <Homepage
               key={i}
               title={book.title}
