@@ -12,7 +12,11 @@ export default function Homepage(props) {
       <p>{props.author}</p>
       <p>{props.genre}</p>
       <p>{props.price} euro</p>
-      <Button>View book</Button>
+      {props.showLink ? (
+        <Link to={`/books/${props.id}`}>
+          <Button>View Book</Button>
+        </Link>
+      ) : null}
     </Jumbotron>
   );
 }
