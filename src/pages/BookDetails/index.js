@@ -3,6 +3,8 @@ import { useSelector, useDispatch } from "react-redux";
 import { useParams } from "react-router-dom";
 import { fetchBookById } from "../../store/bookDetails/actions";
 import { selectBookDetails } from "../../store/bookDetails/selectors";
+import { Link } from 'react-router-dom';
+import { addFavorite } from "../../store/shoppingCart/actions";
 import Jumbotron from "react-bootstrap/Jumbotron";
 import Image from "react-bootstrap/Image";
 import Container from "react-bootstrap/Container";
@@ -16,6 +18,10 @@ export default function BookDetails() {
   useEffect(() => {
     dispatch(fetchBookById(id));
   }, [dispatch, id]);
+  
+  function buttonHandler() {
+    return dispatch(addFavorite(id))
+  }
 
   return (
     <>
@@ -27,7 +33,9 @@ export default function BookDetails() {
         <p>{selectBook.review}</p>
         <p>{selectBook.price} euro</p>
         <Container>
-          <Button>Buy Book</Button>
+          <Link to={"/cart"}>
+            <Button onClick={buttonHandler}>Buy Book</Button>
+          </Link>
         </Container>
       </Jumbotron>
     </>

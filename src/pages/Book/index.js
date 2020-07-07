@@ -41,7 +41,7 @@ export default function Book() {
   useEffect(() => {
     dispatch(fetchBooks());
     dispatch(fetchCategory());
-  }, []);
+  }, [dispatch]);
 
   return (
     <>
