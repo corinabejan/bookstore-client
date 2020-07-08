@@ -4,8 +4,8 @@ import { useSelector, useDispatch } from "react-redux";
 import { selectBooks } from "../../store/books/selectors";
 import { addFavorite, removeFavorite } from "../../store/shoppingCart/actions";
 import { selectFavorites } from "../../store/shoppingCart/selectors";
-import Container from 'react-bootstrap/Container';
-import Button from 'react-bootstrap/Button';
+import Checkout from "../Checkout";
+import Container from "react-bootstrap/Container";
 
 export default function ShoppingCart() {
   const dispatch = useDispatch();
@@ -56,7 +56,7 @@ export default function ShoppingCart() {
           }, 0)}`}
         </div>
         <Container>
-          <Button>Checkout</Button>
+          <Checkout />
         </Container>
       </Jumbotron>
     </>

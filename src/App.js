@@ -9,6 +9,7 @@ import { useSelector } from "react-redux";
 import Book from "../src/pages/Book";
 import BookDetails from "../src/pages/BookDetails";
 import ShoppingCart from "./pages/ShoppingCart";
+import Checkout from "./pages/Checkout";
 
 function App() {
   const isLoading = useSelector(selectAppLoading);
