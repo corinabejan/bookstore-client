@@ -15,7 +15,6 @@ export default function Navigation() {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav style={{ width: "100%" }} fill>
             <NavBarItem path="/" linkText="Homepage" />
-            <NavBarItem path="/other" linkText="Other" />
           </Nav>
         </Navbar.Collapse>
       </Nav>
