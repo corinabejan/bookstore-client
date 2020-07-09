@@ -9,7 +9,8 @@ import { useSelector } from "react-redux";
 import Book from "../src/pages/Book";
 import BookDetails from "../src/pages/BookDetails";
 import ShoppingCart from "./pages/ShoppingCart";
-import Checkout from "./pages/Checkout";
+import UserForm from "./pages/UserForm";
+
 
 function App() {
   const isLoading = useSelector(selectAppLoading);
@@ -22,6 +23,7 @@ function App() {
         <Route exact path="/" component={Book} />
         <Route path="/books/:id" component={BookDetails} />
         <Route path="/cart" component={ShoppingCart} />
+        <Route path='/form' component={UserForm} />
       </Switch>
     </div>
   );
