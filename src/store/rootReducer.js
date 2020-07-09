@@ -4,6 +4,7 @@ import books from "./books/reducer";
 import categories from "./categories/reducer";
 import bookDetails from "./bookDetails/reducer";
 import shoppingCart from "./shoppingCart/reducer";
+import users from './userForm/reducer';
 
 export default combineReducers({
   appState,
@@ -11,4 +12,5 @@ export default combineReducers({
   categories,
   bookDetails,
   shoppingCart,
+  users
 });

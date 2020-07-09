@@ -19,7 +19,7 @@ export default function CheckoutForm() {
     if (!error) {
       const { id } = paymentMethod;
       const data = axios.post(`${API_URL}/checkout`, { id, amount: 2000 });
-      return await (await data).data.message;
+      return data;
     }
   };
 
