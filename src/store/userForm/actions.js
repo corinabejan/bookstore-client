@@ -4,9 +4,10 @@ import { API_URL } from "../../config/constants";
 export const POST_USERS = "POST_USERS";
 
 export const postUsersSuccess = (users) => ({
-  type: "POST_USERS",
+  type: POST_USERS,
   payload: users,
 });
+
 
 export const postUsers = (
   firstName,
@@ -32,6 +33,6 @@ export const postUsers = (
       phoneNumber,
     });
 
-    dispatch(postUsersSuccess(users.user));
+    dispatch(postUsersSuccess(users.data.user));
   };
 };

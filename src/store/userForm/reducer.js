@@ -1,4 +1,4 @@
-import { POST_USERS } from "./actions";
+import { POST_USERS, FETCH_USERS } from "./actions";
 
 const initialState = [];
 

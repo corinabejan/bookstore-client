@@ -13,7 +13,7 @@ export default function ShoppingCart() {
   const books = useSelector(selectBooks);
 
   const cartBooks = books.filter((book) => {
-    return cartList.includes(`${book.id}`);
+    return cartList.includes(book.id);
   });
 
   const prices = cartBooks.map((b) => {

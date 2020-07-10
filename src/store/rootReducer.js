@@ -5,6 +5,7 @@ import categories from "./categories/reducer";
 import bookDetails from "./bookDetails/reducer";
 import shoppingCart from "./shoppingCart/reducer";
 import users from './userForm/reducer';
+import orders from './order/reducer';
 
 export default combineReducers({
   appState,
@@ -12,5 +13,6 @@ export default combineReducers({
   categories,
   bookDetails,
   shoppingCart,
-  users
+  users, 
+  orders,
 });
