@@ -1,9 +1,10 @@
-import React, { useState, useEffect } from "react";
-import { useSelector, useDispatch } from "react-redux";
+import React, { useState } from "react";
+import { useDispatch } from "react-redux";
 import Form from "react-bootstrap/Form";
 import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
 import { postUsers } from "../../store/userForm/actions";
+import { postOrders } from "../../store/order/actions";
 
 export default function UserForm() {
   const dispatch = useDispatch();
@@ -17,10 +18,10 @@ export default function UserForm() {
   const [country, setCountry] = useState("");
   const [phoneNumber, setPhoneNumber] = useState(0);
 
-  const submitHandler = (e) => {
+  const submitHandler = async (e) => {
     e.preventDefault();
 
-    dispatch(
+    await dispatch(
       postUsers(
         firstName,
         lastName,
@@ -33,6 +34,7 @@ export default function UserForm() {
         phoneNumber
       )
     );
+    await dispatch(postOrders());
   };
 
   return (
@@ -142,7 +144,7 @@ export default function UserForm() {
 
       <Form.Group className="mt-5">
         <Button variant="primary" type="submit" onClick={submitHandler}>
-         Submit information
+          Submit information
         </Button>
       </Form.Group>
     </Form>

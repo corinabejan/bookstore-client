@@ -20,7 +20,7 @@ export default function BookDetails() {
   }, [dispatch, id]);
   
   function buttonHandler() {
-    return dispatch(addFavorite(id))
+    return dispatch(addFavorite(parseInt(id)))
   }
 
   return (
