@@ -7,6 +7,7 @@ import { fetchBooks } from "../../store/books/actions";
 import { selectBooks } from "../../store/books/selectors";
 import { fetchCategory } from "../../store/categories/actions";
 import { selectCategories } from "../../store/categories/selectors";
+import "./index.css";
 
 export default function Book() {
   const dispatch = useDispatch();
@@ -57,6 +58,7 @@ export default function Book() {
         </Container>
         <Container>
           <input
+            style={{ marginLeft: "1000px", borderRadius: "8px" }}
             type="search"
             value={searchBook}
             onChange={(e) => setSearchBook(e.target.value)}

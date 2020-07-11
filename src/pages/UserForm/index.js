@@ -5,6 +5,7 @@ import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
 import { postUsers } from "../../store/userForm/actions";
 import { postOrders } from "../../store/order/actions";
+import { Link } from "react-router-dom";
 
 export default function UserForm() {
   const dispatch = useDispatch();
@@ -147,6 +148,10 @@ export default function UserForm() {
           Submit information
         </Button>
       </Form.Group>
+
+      <Link to={"/confirmation"}>
+        <Button>Go to confirmation</Button>
+      </Link>
     </Form>
   );
 }

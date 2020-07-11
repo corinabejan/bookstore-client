@@ -28,10 +28,10 @@ export default function BookDetails() {
       <Jumbotron>
         <h1>{selectBook.title}</h1>
         <Image src={selectBook.image} alt="" />
-        <p>{selectBook.author}</p>
-        <p>{selectBook.genre}</p>
+        <p>By: {selectBook.author}</p>
+        <p>Category: {selectBook.genre}</p>
         <p>{selectBook.review}</p>
-        <p>{selectBook.price} euro</p>
+        <p><span>{selectBook.price} euro</span></p>
         <Container>
           <Link to={"/cart"}>
             <Button onClick={buttonHandler}>Buy Book</Button>

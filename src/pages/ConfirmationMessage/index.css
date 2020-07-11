@@ -1,0 +1,20 @@
+h1 {
+  font-size: small;
+  font-weight: 200;
+  font-variant: normal;
+  font-family: fantasy;
+  color: rgb(51, 25, 75)
+}
+
+p {
+  font-family: cursive;
+  font-size: large;
+  text-shadow: black;
+  font-weight: 500;
+}
+
+span {
+  color: rgb(219, 138, 162);
+  font-style: italic;
+}
+
