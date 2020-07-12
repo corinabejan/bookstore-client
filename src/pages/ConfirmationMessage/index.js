@@ -3,12 +3,10 @@ import Jumbotron from "react-bootstrap/Jumbotron";
 import Container from "react-bootstrap/Container";
 import { useSelector } from "react-redux";
 import { selectUser } from "../../store/userForm/selectors";
-import { selectFavorites } from "../../store/shoppingCart/selectors";
 import './index.css';
 
 export default function ConfirmationMessage() {
   const user = useSelector(selectUser);
-  const order = useSelector(selectFavorites);
 
   let today = new Date();
   let date =

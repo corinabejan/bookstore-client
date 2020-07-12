@@ -13,11 +13,11 @@ export default function UserForm() {
   const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
   const [streetName, setStreetName] = useState("");
-  const [streetNumber, setStreetNumber] = useState(0);
+  const [streetNumber, setStreetNumber] = useState("");
   const [postalCode, setPostalCode] = useState("");
   const [city, setCity] = useState("");
   const [country, setCountry] = useState("");
-  const [phoneNumber, setPhoneNumber] = useState(0);
+  const [phoneNumber, setPhoneNumber] = useState("");
 
   const submitHandler = async (e) => {
     e.preventDefault();
@@ -45,7 +45,6 @@ export default function UserForm() {
         voucher
       </h1>
       <Form.Group>
-        <Form.Label>First Name</Form.Label>
         <Form.Control
           value={firstName}
           onChange={(event) => setFirstName(event.target.value)}
@@ -56,7 +55,6 @@ export default function UserForm() {
       </Form.Group>
 
       <Form.Group>
-        <Form.Label>Last Name</Form.Label>
         <Form.Control
           value={lastName}
           onChange={(event) => setLastName(event.target.value)}
@@ -67,7 +65,6 @@ export default function UserForm() {
       </Form.Group>
 
       <Form.Group>
-        <Form.Label>Email</Form.Label>
         <Form.Control
           value={email}
           onChange={(event) => setEmail(event.target.value)}
@@ -78,7 +75,6 @@ export default function UserForm() {
       </Form.Group>
 
       <Form.Group>
-        <Form.Label>Street Name</Form.Label>
         <Form.Control
           value={streetName}
           onChange={(event) => setStreetName(event.target.value)}
@@ -89,18 +85,16 @@ export default function UserForm() {
       </Form.Group>
 
       <Form.Group>
-        <Form.Label>Street Number</Form.Label>
         <Form.Control
           value={streetNumber}
           onChange={(event) => setStreetNumber(event.target.value)}
-          type="number"
-          placeholder="Number..."
+          type="text"
+          placeholder="Street Number..."
           required
         />
       </Form.Group>
 
       <Form.Group>
-        <Form.Label>Postal Code</Form.Label>
         <Form.Control
           value={postalCode}
           onChange={(event) => setPostalCode(event.target.value)}
@@ -111,7 +105,6 @@ export default function UserForm() {
       </Form.Group>
 
       <Form.Group>
-        <Form.Label>City</Form.Label>
         <Form.Control
           value={city}
           onChange={(event) => setCity(event.target.value)}
@@ -122,7 +115,6 @@ export default function UserForm() {
       </Form.Group>
 
       <Form.Group>
-        <Form.Label>Country</Form.Label>
         <Form.Control
           value={country}
           onChange={(event) => setCountry(event.target.value)}
@@ -133,11 +125,10 @@ export default function UserForm() {
       </Form.Group>
 
       <Form.Group>
-        <Form.Label>Phone Number</Form.Label>
         <Form.Control
           value={phoneNumber}
           onChange={(event) => setPhoneNumber(event.target.value)}
-          type="number"
+          type="text"
           placeholder="Phone number..."
           required
         />
