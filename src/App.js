@@ -11,6 +11,7 @@ import BookDetails from "../src/pages/BookDetails";
 import ShoppingCart from "./pages/ShoppingCart";
 import UserForm from "./pages/UserForm";
 import ConfirmationMessage from "./pages/ConfirmationMessage";
+import About from "./pages/About";
 
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
         <Route path="/cart" component={ShoppingCart} />
         <Route path='/form' component={UserForm} />
         <Route path='/confirmation' component={ConfirmationMessage} />
+        <Route path="/about" component={About} />
       </Switch>
     </div>
   );

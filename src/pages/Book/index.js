@@ -3,6 +3,8 @@ import { useDispatch, useSelector } from "react-redux";
 import Jumbotron from "react-bootstrap/Jumbotron";
 import Container from "react-bootstrap/Container";
 import Homepage from "../../components/Homepage";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 import { fetchBooks } from "../../store/books/actions";
 import { selectBooks } from "../../store/books/selectors";
 import { fetchCategory } from "../../store/categories/actions";
@@ -66,18 +68,22 @@ export default function Book() {
           />
         </Container>
         <Container>
-          {filteredSearch.map((book, i) => (
-            <Homepage
-              key={i}
-              id={book.id}
-              title={book.title}
-              image={book.image}
-              author={book.author}
-              genre={book.genre}
-              price={book.price}
-              showLink={true}
-            />
-          ))}
+          <Row>
+            {filteredSearch.map((book, i) => (
+              <Col sm="3">
+                <Homepage
+                  key={i}
+                  id={book.id}
+                  title={book.title}
+                  image={book.image}
+                  author={book.author}
+                  genre={book.genre}
+                  price={book.price}
+                  showLink={true}
+                />
+              </Col>
+            ))}
+          </Row>
         </Container>
       </Jumbotron>
     </>
