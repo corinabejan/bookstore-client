@@ -4,11 +4,11 @@
 
 Corina's BookStore is an webshop from where people can buy books and where after the buying they will receive a voucher for a free coffee. Is an app dedicated to books lovers, me myself being one of them. It is a simple to use app, very direct and with a friendly user interface. 
 
-![Homepage]()
-![Shopping Cart]()
-![Information form]()
-![Confirmation message]()
-![About page]()
+![Homepage](https://github.com/corinabejan/bookstore-client/blob/master/images/homepage.jpg)
+![Shopping Cart](https://github.com/corinabejan/bookstore-client/blob/master/images/shoppingcart.jpg)
+![Information form](https://github.com/corinabejan/bookstore-client/blob/master/images/informationform.jpg)
+![Confirmation message](https://github.com/corinabejan/bookstore-client/blob/master/images/confirmationmessage.jpg)
+![About page](https://github.com/corinabejan/bookstore-client/blob/master/images/aboutpage.jpg)
 
 
 **Table of Contents**
@@ -63,11 +63,11 @@ The user stories that I used for the planning of my app you can find: [here](htt
 
 
 #**Wireframe**
-![Homepage]()
-![View Book]()
-![Shopping Cart]()
-![Payment methods]()
-![Confirmation message with voucher]()
+![Homepage](https://github.com/corinabejan/bookstore-client/blob/master/images/wireframe1.jpg)
+![View Book](https://github.com/corinabejan/bookstore-client/blob/master/images/wireframe2.jpg)
+![Shopping Cart](https://github.com/corinabejan/bookstore-client/blob/master/images/wireframe3.jpg)
+![Payment methods](https://github.com/corinabejan/bookstore-client/blob/master/images/wireframe4.jpg)
+![Confirmation message with voucher](https://github.com/corinabejan/bookstore-client/blob/master/images/wireframe5.jpg)
 
 
 #**Interface**
