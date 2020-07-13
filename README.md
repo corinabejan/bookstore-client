@@ -13,14 +13,14 @@ Corina's BookStore is an webshop from where people can buy books and where after
 
 **Table of Contents**
 
-- [App Demo](https://github.com/README.md#app-demo)
-- [Backend Repository](https://github.com/README.md#backend-repository)
-- [Used Teachologies](https://github.com/README.md#used-technologies)
-- [Goals For This Project](https://github.com/README.md#goals-for-this-project)
-- [User Stories](https://github.com/README.md#user-stories)
-- [Wireframe](https://github.com/README.md#wireframe)
-- [Interface](https://github.com/README.md#interface)
-- [Audience](https://github.com/README.md#audience)
+- [App Demo](#app-demo)
+- [Backend Repository](#backend-repository)
+- [Used Teachologies](#used-technologies)
+- [Goals For This Project](#goals-for-this-project)
+- [User Stories](#user-stories)
+- [Wireframe](#wireframe)
+- [Interface](#interface)
+- [Audience](#audience)
 
 
 **App Demo**
@@ -46,7 +46,7 @@ The backend repository for this app you can find it: [here](https://github.com/c
 - Sequelize
   
 
-#**Goals For This Project**
+**Goals For This Project**
 
 The main goal of this project was to bring together the passion that I have for books, in creating an app with the technologies learned during the past few months at [Codaisseur](https://codaisseur.com/):
  - Creating a React app
