@@ -4,23 +4,23 @@
 
 Corina's BookStore is an webshop from where people can buy books and where after the buying they will receive a voucher for a free coffee. Is an app dedicated to books lovers, me myself being one of them. It is a simple to use app, very direct and with a friendly user interface. 
 
-[Homepage]()
-[Shopping Cart]()
-[Information form]()
-[Confirmation message]()
-[About page]()
+![Homepage]()
+![Shopping Cart]()
+![Information form]()
+![Confirmation message]()
+![About page]()
 
 
 **Table of Contents**
 
-- [App Demo](#app-demo)
-- [Backend Repository](#backend-repository)
-- [Used Teachologies](#used-technologies)
-- [Goals For This Project](#goals-for-this-project)
-- [User Stories](#user-stories)
-- [Wireframe](#wireframe)
-- [Interface](#interface)
-- [Audience](#audience)
+- [App Demo](https://github.com/corinabejan/bookstore-client/../../../../README.md#app-demo)
+- [Backend Repository](https://github.com/corinabejan/bookstore-client/../../../../README.md#backend-repository)
+- [Used Teachologies](https://github.com/corinabejan/bookstore-client/../../../../README.md#used-technologies)
+- [Goals For This Project](https://github.com/corinabejan/bookstore-client/../../../../README.md#goals-for-this-project)
+- [User Stories](https://github.com/corinabejan/bookstore-client/../../../../README.md#user-stories)
+- [Wireframe](https://github.com/corinabejan/bookstore-client/../../../../README.md#wireframe)
+- [Interface](https://github.com/corinabejan/bookstore-client/../../../../README.md#interface)
+- [Audience](https://github.com/corinabejan/bookstore-client/../../../../README.md#audience)
 
 
 #**App Demo**
@@ -63,14 +63,14 @@ The user stories that I used for the planning of my app you can find: [here](htt
 
 
 #**Wireframe**
-[Homepage]()
-[View Book]()
-[Shopping Cart]()
-[Payment methods]()
-[Confirmation message with voucher]()
+![Homepage]()
+![View Book]()
+![Shopping Cart]()
+![Payment methods]()
+![Confirmation message with voucher]()
 
 
-#**##Interface**
+#**Interface**
 
 For the interface I opted for a simple, easy to use Interface to allow every customer to experience this app in the simplest and fastest way possible. The CSS applied is intented to make it easy to the eye to be seen, and everything is presented in a very minimalist way.
 
