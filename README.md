@@ -4,11 +4,11 @@
 
 Corina's BookStore is an webshop from where people can buy books and where after the buying they will receive a voucher for a free coffee. Is an app dedicated to books lovers, me myself being one of them. It is a simple to use app, very direct and with a friendly user interface. 
 
-![Homepage](/home/corina/Pictures/homepage.jpg)
-![Shopping Cart](/home/corina/Pictures/shoppingcart.jpg)
-![Information form](/home/corina/Pictures/informationform.jpg)
-![Confirmation message](/home/corina/Pictures/confirmationmessage.jpg)
-![About page](/home/corina/Pictures/aboutpage.jpg)
+[Homepage]()
+[Shopping Cart]()
+[Information form]()
+[Confirmation message]()
+[About page]()
 
 
 **Table of Contents**
@@ -63,11 +63,11 @@ The user stories that I used for the planning of my app you can find: [here](htt
 
 
 **Wireframe**
-![Homepage](/home/corina/Pictures/wireframe1.jpg)
-![View Book](/home/corina/Pictures/wireframe2.jpg)
-![Shopping Cart](/home/corina/Pictures/wireframe3.jpg)
-![Payment methods](/home/corina/Pictures/wireframe4.jpg)
-![Confirmation message with voucher](/home/corina/Pictures/wireframe5.jpg)
+[Homepage]()
+[View Book]()
+[Shopping Cart]()
+[Payment methods]()
+[Confirmation message with voucher]()
 
 
 **Interface**
