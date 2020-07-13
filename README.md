@@ -1,68 +1,82 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Corina's BookStore**
 
-## Available Scripts
+**Introduction**
 
-In the project directory, you can run:
+Corina's BookStore is an webshop from where people can buy books and where after the buying they will receive a voucher for a free coffee. Is an app dedicated to books lovers, me myself being one of them. It is a simple to use app, very direct and with a friendly user interface. 
 
-### `npm start`
+[!Homepage](/home/corina/Pictures/homepage.png)
+[!Shopping Cart](/home/corina/Pictures/shoppingcart.png)
+[!Information form](/home/corina/Pictures/informationform.png)
+[!Confirmation message](/home/corina/Pictures/confirmationmessage.png)
+[!About page](/home/corina/Pictures/aboutpage.png)
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+**Table of Contents**
 
-### `npm test`
+[App Demo](https://github.com/corinabejan/bookstore-client/README.md#app-demo)
+[Backend Repository](https://github.com/corinabejan/bookstore-client/README.md#backend-repository)
+[Used Teachologies](https://github.com/corinabejan/bookstore-client/README.md#used-technologies)
+[Goals For This Project](https://github.com/corinabejan/bookstore-client/README.md#goals-for-this-project)
+[User Stories](https://github.com/corinabejan/bookstore-client/README.md#user-stories)
+[Wireframe](https://github.com/corinabejan/bookstore-client/README.md#wireframe)
+[Interface](https://github.com/corinabejan/bookstore-client/README.md#interface)
+[Audience](https://github.com/corinabejan/bookstore-client/README.md#audience)
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+**App Demo**
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+You can see a working version of the app : [here](https://corina-bookstore.netlify.app/)
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+**Backend repository**
 
-### `npm run eject`
+The backend repository for this app you can find it: [here](https://github.com/corinabejan/bookstore-server)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+**Used Technologies**
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- React
+- Redux
+- React Bootstrap
+- Axios
+- Express
+- Nodejs
+- React Stripe
+- Sequelize
+  
 
-## Learn More
+**Goals For This Project**
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+The main goal of this project was to bring together the passion that I have for books, in creating an app with the technologies learned during the past few months at [Codaisseur](https://codaisseur.com/):
+ - Creating a React app
+ - Dealing with errors encountered during the development of the app
+ - Using GitHub in a productive way
+ - Implementing payment methods with [Stripe](https://stripe.com/docs)
+ - Showcasing my set of skills
+ - Practicing the new knowledge
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+**User Stories**
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+The user stories that I used for the planning of my app you can find: [here](https://github.com/users/corinabejan/projects/1)
 
-### Analyzing the Bundle Size
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+**Wireframe**
+[!Homepage](/home/corina/Pictures/wireframe1.png)
+[!View Book](/home/corina/Pictures/wireframe2.png)
+[!Shopping Cart](/home/corina/Pictures/wireframe3.png)
+[!Payment methods](/home/corina/Pictures/wireframe4.png)
+[!Confirmation message with voucher](/home/corina/Pictures/wireframe5.png)
 
-### Making a Progressive Web App
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+**Interface**
 
-### Advanced Configuration
+For the interface I opted for a simple, easy to use Interface to allow every customer to experience this app in the simplest and fastest way possible. The CSS applied is intented to make it easy to the eye to be seen, and everything is presented in a very minimalist way.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
 
-### Deployment
+**Audience**
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+The audience targeted with this app is very broad. Everyone, at every age should be able to use this app, as is very easy to just go and see pictures of the books, a small summary added for each and one of them, and a very straightforward method of paying. 
+Is just there for everyone to use, and of course your voucher is waiting at the end!
 
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
