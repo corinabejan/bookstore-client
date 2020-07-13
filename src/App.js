@@ -1,24 +1,34 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import { Switch, Route } from "react-router-dom";
+import Navigation from "./components/Navigation";
+import Loading from "./components/Loading";
+import MessageBox from "./components/MessageBox";
+import { selectAppLoading } from "./store/appState/selectors";
+import { useSelector } from "react-redux";
+import Book from "../src/pages/Book";
+import BookDetails from "../src/pages/BookDetails";
+import ShoppingCart from "./pages/ShoppingCart";
+import UserForm from "./pages/UserForm";
+import ConfirmationMessage from "./pages/ConfirmationMessage";
+import About from "./pages/About";
+
 
 function App() {
+  const isLoading = useSelector(selectAppLoading);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navigation />
+      <MessageBox />
+      {isLoading ? <Loading /> : null}
+      <Switch>
+        <Route exact path="/" component={Book} />
+        <Route path="/books/:id" component={BookDetails} />
+        <Route path="/cart" component={ShoppingCart} />
+        <Route path='/form' component={UserForm} />
+        <Route path='/confirmation' component={ConfirmationMessage} />
+        <Route path="/about" component={About} />
+      </Switch>
     </div>
   );
 }
